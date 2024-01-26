@@ -64,4 +64,13 @@ body {
     font-family: Poppins;
     font-weight: 400;
     font-size: 12px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    width: 160px;
+}
+
+.header-icons {
+    display: flex;
+    column-gap: 20px;
 }
