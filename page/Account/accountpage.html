@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,9 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="accountpage.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
 </head>
 
 <body>
+    <!-- Header Start  -->
     <div class="header-top">
         <p class="header-para">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span><a class="shop-btn"
@@ -61,50 +64,117 @@
             </div>
         </div>
     </div>
-    <div class="mobile-menu-sec nested">
-        <div class="nested-n">
-            <div class="cross-icon">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="input-sec-mb">
-                <h3 class="para-excl">
-                    Exclusive
-                </h3>
-                <div class="input-mb-search">
-                    <input type="text" placeholder="What are you looking for?" class="looking-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-            <ul class="mobile-menu">
-                <li class="menu-items">
-                    <a href="" class="home-items">Home</a>
-                </li>
-                <li class="menu-items">
-                    <a href="" class="home-items">Contact</a>
-                </li>
-                <li class="menu-items">
-                    <a href="" class="home-items">About</a>
-                </li>
-                <li class="menu-items">
-                    <a href="" class="home-items">Sign Up</a>
-                </li>
-            </ul>
+    <div class="mobile-menu-sec">
+        <div class="cross-icon">
+            <i class="fa-solid fa-xmark"></i>
         </div>
-    </div>
-    <div class="found-page">
-        <p class="home-error"><a href="" class="error-btn">Home/404 Error</a></p>
-        <div class="found-cn">
-            <h3 class="not-found-head">
-                404 Not Found
+        <div class="input-sec-mb">
+            <h3 class="para-excl">
+                Exclusive
             </h3>
-            <p class="visited-para">
-                Your visited page not found. You may go home page.
-            </p>
-            <button class="Back-home-btn">
-                Back to home page
-            </button>
+            <div class="input-mb-search">
+                <input type="text" placeholder="What are you looking for?" class="looking-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <ul class="mobile-menu">
+            <li class="menu-items">
+                <a href="" class="home-items">Home</a>
+            </li>
+            <li class="menu-items">
+                <a href="" class="home-items">Contact</a>
+            </li>
+            <li class="menu-items">
+                <a href="" class="home-items">About</a>
+            </li>
+            <li class="menu-items">
+                <a href="" class="home-items">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Header Lower -->
+
+    <!-- Account Content Start -->
+    <div class="account-page">
+        <div class="home-side">
+            <p class="home-error"><a href="" class="error-btn">Home/Cantact</a></p>
+            <p class="wel-para"><a href="" class="wel-btn">Welcome!<span class="remel-red"> Md Rimel</span></a></p>
+        </div>
+        <div class="mng-act-lower-sec">
+            <div>
+                <p class="account-title">Manage My Account</p>
+                <ul class="menu-sec-account">
+                    <li class="menu-items-account">
+                        <a href="" class="items-act red-act">My account</a>
+                    </li>
+                    <li class="menu-items-account">
+                        <a href="" class="items-act">Address Book</a>
+                    </li>
+                    <li class="menu-items-account">
+                        <a href="" class="items-act">My Payment Options</a>
+                    </li>
+                </ul>
+                <div>
+                    <p class="account-title">My Orders</p>
+                    <ul class="menu-sec-account">
+                        <li class="menu-items-account">
+                            <a href="" class="items-act">My Returns</a>
+                        </li>
+                        <li class="menu-items-account">
+                            <a href="" class="items-act">My Cancellations</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="account-title">
+                    My Orders
+                </p>
+            </div>
+            <form action="" class="Profile-section-edit">
+                <p class="Profile-para">
+                    Edit Your Profile
+                </p>
+                <div class="email-edit-ipt">
+                    <div>
+                        <label for="" class="name-lb"> First Name</label><br><input type="text" class="ipt-md"
+                            placeholder="Md">
+                    </div>
+                    <div>
+                        <label for="" class="name-lb">Last Name</label><br><input type="text" class="ipt-md"
+                            placeholder="Rimel">
+                    </div>
+                </div>
+                <div class="email-edit-ipt">
+                    <div>
+                        <label for="" class="name-lb">Email</label><br><input type="text" class="ipt-md"
+                            placeholder="rimel1111@gmail.com">
+                    </div>
+                    <div>
+                        <label for="" class="name-lb">Address</label><br><input type="text" class="ipt-md"
+                            placeholder="Kingston, 5236, United">
+                    </div>
+                </div>
+                <label for="" class="name-lb">Password Changes</label><br><input type="text" class="ipt-md"
+                    placeholder="Current Passwod">
+                <div>
+                    <input type="text" class="ipt-md" placeholder="New Passwod">
+                </div>
+                <div>
+                    <input type="text" class="ipt-md" placeholder="Confirm New Passwod">
+                </div>
+                <div class="btns-sec">
+                    <button class="cncl-btn">
+                        Cancel
+                    </button>
+                    <button class="cncl-btn other-btn">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
+    <!-- Account Content End -->
+
+    <!-- Footer Start -->
     <div class="footer">
         <div class="footer-sec active">
             <div class="mobile-menu-dropdown">
@@ -222,6 +292,7 @@
     <div>
         <p class="Copyright-last"><i class="fa-regular fa-copyright"></i>Copyright Rimel 2022. All right reserved</p>
     </div>
+    <!-- Footer Lower -->
 
 </body>
 

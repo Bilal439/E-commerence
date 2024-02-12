@@ -9,6 +9,127 @@ body {
     padding: 0;
     text-align: center;
 }
+.main-contact {
+    margin: 6% 8%;
+    text-align: justify;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.error-btn {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.error-btn,
+.snd-btn:hover {
+    cursor: pointer;
+}
+
+.fa-phone,
+.fa-envelope {
+    color: aliceblue;
+    background-color: rgba(219, 68, 68, 1);
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.call-p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 6px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.in-time {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.phone-in {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.contact-us {
+    border-bottom: 1px solid;
+    width: 270px;
+    color: darkgrey;
+}
+
+.write-msg {
+    margin-top: 20px;
+}
+
+.input-write {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.input-msg {
+    margin-top: 20px;
+}
+
+.snd-btn {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(250, 250, 250, 1);
+    background-color: rgba(219, 68, 68, 1);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 48px 16px 48px;
+    margin: 20px;
+    position: relative;
+    top: 100px;
+}
+
+
+@media screen and (max-width:1032px) {
+    .contact {
+        display: block;
+        justify-content: space-around;
+        margin: 5% 0;
+    }
+
+    .snd-btn {
+        position: relative;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width:569px) {
+    .input-write {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:552px) { 
+
+    .snd-btn {
+        position: relative;
+        top: 18px;
+    }
+
+}
+
+
 
 .header-top {
     background-color: rgba(0, 0, 0, 1);
@@ -30,10 +151,6 @@ body {
     font-size: 16px;
 }
 
-.home-items:hover {
-    border-bottom: 1px solid #ccc;
-}
-
 .shop-btn {
     color: rgba(250, 250, 250, 1);
     font-family: Poppins;
@@ -41,8 +158,7 @@ body {
     font-size: 14px;
 }
 
-.fa-angle-down,
-.eng-btn {
+.fa-angle-down,.eng-btn {
     cursor: pointer;
 }
 
@@ -69,6 +185,10 @@ body {
 .menu-sec-hd {
     display: flex;
     column-gap: 40px;
+}
+
+.home-items:hover {
+    border-bottom: 1px solid #ccc;
 }
 
 .menu-items {
@@ -128,7 +248,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:860px){
 
     .header-top {
         display: none;
@@ -171,22 +291,9 @@ body {
     .mobile-menu-sec {
         margin: 0 6px;
     }
-
-    .nested {
-        display: block;
-        transition: 20s;
-        opacity: 2;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .nested-n :hover .mobile-menu {
-        height: auto;
-        opacity: 1;
-    }
 }
 
-@media screen and (min-width:860px) {
+@media screen and (min-width:860px){
 
     .media-list {
         display: none;
@@ -204,103 +311,6 @@ body {
         display: none;
     }
 }
-
-
-
-
-
-.error-btn {
-    text-decoration: none;
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 1);
-}
-
-.home-error {
-    position: relative;
-    top: 60px;
-    display: flex;
-    margin-left: 10%;
-}
-
-.found-cn {
-    margin: 10%;
-}
-
-.not-found-head {
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 110px;
-    color: rgba(0, 0, 0, 1);
-}
-
-.visited-para {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-    margin: 20px;
-}
-
-.Back-home-btn {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(250, 250, 250, 1);
-    background-color: rgba(219, 68, 68, 1);
-    border: none;
-    border-radius: 4px;
-    padding: 16px 48px 16px 48px;
-    margin: 20px;
-    position: relative;
-    top: 10px;
-}
-
-.Back-home-btn:hover {
-    cursor: pointer;
-}
-
-
-@media screen and (max-width:986px) {
-    .not-found-head {
-        font-size: 70px;
-    }
-
-    .home-error {
-        position: relative;
-        top: 30px;
-    }
-
-}
-
-@media screen and (max-width:628px) {
-    .not-found-head {
-        font-size: 36px;
-    }
-
-    .home-error {
-        position: relative;
-        top: 20px;
-    }
-
-    .Back-home-btn {
-        position: relative;
-        top: 10px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .visited-para {
-        font-family: Poppins;
-        font-size: 12px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 1);
-        margin: 10px;
-    }
-}
-
-
 
 
 .footer {
@@ -407,6 +417,7 @@ body {
     color: rgba(250, 250, 250, 1);
 }
 
+
 @media screen and (max-width:1209px) {
 
     .footer {
@@ -496,18 +507,22 @@ body {
         opacity: 1;
     }
 
-    .active:hover .menu-sec-footer-ql {
+    .active:hover .menu-sec-footer-ql{
         height: auto;
         opacity: 1;
     }
 
-    .active:hover .menu-footer-store {
+    .active:hover .menu-footer-store{
         height: auto;
         opacity: 1;
     }
 }
 
 @media screen and (min-width:600px) {
+
+    .fa-angle-down {
+        display: none;
+    }
 
     .footer-sec>.mobile-menu-dropdown>.dropdown-icon {
         display: none;
